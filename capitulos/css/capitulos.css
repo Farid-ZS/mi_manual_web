@@ -1,0 +1,142 @@
+/* ================================
+   GENERALES PARA CAPÍTULOS
+================================ */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto 50px auto; /* deja espacio por navbar fijo */
+    padding: 20px;
+}
+
+/* ================================
+   NAVBAR (si quieres sobreescribir)
+================================ */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 40px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    height: 65px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #1e88e5;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #0d47a1;
+}
+
+/* ================================
+   TITULOS Y SECCIONES
+================================ */
+.chapter-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.chapter-section {
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.chapter-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #34495e;
+}
+
+.chapter-list {
+    list-style: disc inside;
+    margin-left: 0;
+    padding-left: 15px;
+}
+
+/* ================================
+   BOTONES DE INTERACCIÓN
+================================ */
+.actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-action, .btn-completar {
+    padding: 12px 25px;
+    margin: 8px;
+    background-color: #1e88e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-action:hover, .btn-completar:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   MENSAJE DE ESTADO
+================================ */
+.mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+/* ================================
+   SEPARADORES
+================================ */
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #bdc3c7;
+}
+.btn-action, .btn-completar {
+    padding: 12px 25px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 10px;
+    background: #1e88e5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-action:hover, .btn-completar:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+}

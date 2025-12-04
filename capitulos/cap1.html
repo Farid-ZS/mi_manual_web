@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1 - Estrés Académico</title>
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Estilos específicos de capítulos -->
+    <link rel="stylesheet" href="/capitulos/css/capitulos.css">
+    <style>
+        /* Ajustes de botones para que se vean mejor */
+        .btn-action, .btn-completar {
+            padding: 12px 20px;
+            margin: 8px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #1e88e5;
+            color: white;
+            transition: 0.3s;
+        }
+        .btn-action:hover, .btn-completar:hover {
+            background: #1565c0;
+        }
+
+        /* Contenedor del robot grande */
+        .robot-practica-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .robot-practica-container img {
+            width: 120px;
+            height: 120px;
+        }
+
+        /* Mensaje estado */
+        #mensaje-estado {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <img src="/assets/logo.png" class="logo" alt="Logo">
+        <nav>
+            <a href="/index.html#inicio">Inicio</a>
+            <a href="/index.html#capitulos">Capítulos</a>
+            <a href="/impacto.html">Impacto</a>
+        </nav>
+    </header>
+
+    <!-- CONTENEDOR DEL CAPÍTULO -->
+    <main class="container">
+        <h1 class="chapter-title">Capítulo 1: Estrés Académico</h1>
+        <p class="intro">
+            El estrés académico es una de las experiencias más comunes entre los estudiantes.
+            Este capítulo te ayudará a identificar síntomas, causas y técnicas para manejarlo.
+        </p>
+
+        <hr>
+
+        <section class="chapter-section">
+            <h2>1. Señales comunes de estrés</h2>
+            <ul class="chapter-list">
+                <li>Tensión muscular</li>
+                <li>Preocupación constante</li>
+                <li>Fatiga mental</li>
+                <li>Irritabilidad</li>
+                <li>Dificultad para concentrarse</li>
+            </ul>
+        </section>
+
+        <section class="chapter-section">
+            <h2>2. Causas frecuentes</h2>
+            <ul class="chapter-list">
+                <li>Sobrecarga académica</li>
+                <li>Exámenes</li>
+                <li>Proyectos acumulados</li>
+                <li>Mala organización</li>
+                <li>Presión por el rendimiento</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Robot grande para práctica -->
+        <div class="robot-practica-container">
+            <img id="robot-practica" src="/assets/robot/neutral.png" alt="Robot respirando">
+        </div>
+
+        <!-- BOTONES DE INTERACCIÓN -->
+        <div class="actions">
+            <h3>¿Qué deseas hacer?</h3>
+
+            <button class="btn-action" id="btn-practica">🧘 Iniciar práctica rápida</button>
+            <button class="btn-action" id="btn-tecnica">🌬 Técnica de respiración</button>
+            <button class="btn-completar" id="btn-completar">✔ Marcar capítulo como completado</button>
+
+            <p id="mensaje-estado" class="mensaje"></p>
+        </div>
+    </main>
+
+    <!-- WIDGET DE CHAT (ROBOT) -->
+    <div id="chatbot-button">
+        <img id="robot-avatar" src="/assets/robot/neutral.png" alt="robot" />
+    </div>
+
+    <div id="chatbot-panel">
+        <div class="chat-header">
+            <h3>Asistente de Bienestar</h3>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta..." />
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="/firebase/firebase-app.js"></script>
+    <script src="/firebase/firebase-firestore.js"></script>
+    <script src="/main.js"></script>           <!-- Funciones generales -->
+    <script src="/capitulos/js/capitulos.js"></script>
+    <script src="/chatbot/chatbot.js"></script> <!-- Chatbot -->
+
+</body>
+</html>
