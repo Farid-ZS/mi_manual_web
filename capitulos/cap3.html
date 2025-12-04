@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3 - Programación Neurolingüística (PNL)</title>
+
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Estilos específicos de capítulos -->
+    <link rel="stylesheet" href="/capitulos/css/capitulos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <img src="/assets/logo.png" class="logo" alt="Logo">
+
+        <nav>
+            <a href="/index.html#inicio">Inicio</a>
+            <a href="/index.html#capitulos">Capítulos</a>
+            <a href="/impacto.html">Impacto</a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+
+        <h1 class="chapter-title">Capítulo 3: Programación Neurolingüística (PNL)</h1>
+
+        <p class="intro">
+            La PNL te ayuda a modificar patrones de pensamiento, 
+            mejorar tu comunicación interna y cambiar la forma en que interpretas tus experiencias.
+        </p>
+
+        <hr>
+
+        <!-- SECCIÓN 1 -->
+        <section class="chapter-section">
+            <h2>1. ¿Qué es la PNL?</h2>
+            <ul class="chapter-list">
+                <li>Comprender cómo piensas y actúas</li>
+                <li>Cambiar significados y percepciones</li>
+                <li>Reprogramar respuestas automáticas</li>
+                <li>Modelar estados mentales efectivos</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section class="chapter-section">
+            <h2>2. Beneficios principales</h2>
+            <ul class="chapter-list">
+                <li>Mayor control emocional</li>
+                <li>Mejora del diálogo interno</li>
+                <li>Reinterpretación saludable de situaciones</li>
+                <li>Acceso a estados mentales más útiles</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Robot pensando -->
+        <div class="robot-practica-container">
+            <img id="robot-practica" src="/assets/robot/pensando.png" alt="Robot pensando">
+        </div>
+
+        <!-- BOTONES -->
+        <div class="actions">
+            <h3>¿Qué deseas practicar?</h3>
+
+            <button class="btn-action" id="btn-practica">✨ Anclaje de Estados Positivos</button>
+
+            <button class="btn-action" id="btn-tecnica">🧠 Reencuadre Cognitivo</button>
+
+            <button class="btn-completar" id="btn-completar">✔ Marcar capítulo como completado</button>
+
+            <p id="mensaje-estado" class="mensaje"></p>
+        </div>
+
+    </main>
+
+    <!-- CHATBOT -->
+    <div id="chatbot-button">
+        <img id="robot-avatar" src="/assets/robot/neutral.png" alt="robot" />
+    </div>
+
+    <div id="chatbot-panel">
+        <div class="chat-header">
+            <h3>Asistente de Bienestar</h3>
+            <button id="close-chat">×</button>
+        </div>
+
+        <div class="chat-body" id="chat-body"></div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta..." />
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Capítulo configurado para PNL
+        window.CAP_NUM = 3;
+    </script>
+
+    <script src="/firebase/firebase-app.js"></script>
+    <script src="/firebase/firebase-firestore.js"></script>
+
+    <script src="/main.js"></script>    
+    <script src="/capitulos/js/capitulos.js"></script>
+    <script src="/chatbot/chatbot.js"></script>
+
+</body>
+</html>

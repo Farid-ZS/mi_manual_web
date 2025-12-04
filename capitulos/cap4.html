@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 4 - Comunicación Asertiva</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/capitulos/css/capitulos.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <img src="/assets/logo.png" class="logo" alt="Logo">
+
+    <nav>
+        <a href="/index.html#inicio">Inicio</a>
+        <a href="/index.html#capitulos">Capítulos</a>
+        <a href="/impacto.html">Impacto</a>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h1 class="chapter-title">Capítulo 4: Comunicación Asertiva</h1>
+
+    <p class="intro">
+        La comunicación asertiva te permite expresar tus emociones, necesidades y límites sin agresividad,
+        sin pasividad y sin culpa. Aquí aprenderás técnicas claras y aplicables al día a día.
+    </p>
+
+    <hr>
+
+    <!-- SECCIÓN 1 -->
+    <section class="chapter-section">
+        <h2>1. Mensajes en primera persona (Yo)</h2>
+        <ul class="chapter-list">
+            <li>Evita acusaciones como “Tú siempre…”</li>
+            <li>Usa la fórmula: “Yo me siento ___ cuando ___ porque ___”.</li>
+            <li>Reduce conflictos y mejora la comprensión mutua.</li>
+        </ul>
+    </section>
+
+    <!-- SECCIÓN 2 -->
+    <section class="chapter-section">
+        <h2>2. Técnica del Disco Rayado</h2>
+        <ul class="chapter-list">
+            <li>Mantén tu mensaje claro y repetido con calma.</li>
+            <li>No entres en provocaciones o desvíos.</li>
+            <li>Ejemplo: “Entiendo tu punto, pero mi decisión es…”</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <div class="robot-practica-container">
+        <img id="robot-practica" src="/assets/robot/escuchando.png" alt="Robot emocional">
+    </div>
+
+    <div class="actions">
+        <h3>¿Qué deseas hacer?</h3>
+
+        <button class="btn-action" id="btn-practica">🗣️ Ejercicio Asertivo</button>
+
+        <button class="btn-action" id="btn-tecnica">🧠 Técnicas de Comunicación</button>
+
+        <button class="btn-completar" id="btn-completar">✔ Marcar capítulo como completado</button>
+
+        <p id="mensaje-estado" class="mensaje"></p>
+    </div>
+
+</main>
+
+<script>
+    window.CAP_NUM = 4;
+</script>
+
+<script src="/firebase/firebase-app.js"></script>
+<script src="/firebase/firebase-firestore.js"></script>
+<script src="/main.js"></script>
+<script src="/capitulos/js/capitulos.js"></script>
+<script src="/chatbot/chatbot.js"></script>
+
+</body>
+</html>
