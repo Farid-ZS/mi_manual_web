@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2 - Mindfulness</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/capitulos/css/capitulos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <img src="/assets/logo.png" class="logo" alt="Logo">
+
+        <nav>
+            <a href="/index.html#inicio">Inicio</a>
+            <a href="/index.html#capitulos">Capítulos</a>
+            <a href="/impacto.html">Impacto</a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+
+        <h1 class="chapter-title">Capítulo 2: Mindfulness</h1>
+
+        <p class="intro">
+            El mindfulness te ayuda a mantener tu atención en el presente, a reducir el ruido mental
+            y a mejorar tu enfoque. En este capítulo aprenderás técnicas sencillas que podrás usar
+            en cualquier momento del día.
+        </p>
+
+        <hr>
+
+        <!-- SECCIÓN 1 -->
+        <section class="chapter-section">
+            <h2>1. ¿Qué es el mindfulness?</h2>
+            <ul class="chapter-list">
+                <li>Estar consciente del momento presente</li>
+                <li>Observar sin juzgar</li>
+                <li>Reconectar con tus sentidos</li>
+                <li>Reducir pensamientos automáticos</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section class="chapter-section">
+            <h2>2. Beneficios principales</h2>
+            <ul class="chapter-list">
+                <li>Mejor concentración</li>
+                <li>Menos ansiedad</li>
+                <li>Mayor claridad mental</li>
+                <li>Mejor regulación emocional</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Robot -->
+        <div class="robot-practica-container">
+            <img id="robot-practica" src="/assets/robot/meditando.png" alt="Robot meditando">
+        </div>
+
+        <!-- BOTONES -->
+        <div class="actions">
+            <h3>¿Qué deseas hacer?</h3>
+
+            <button class="btn-action" id="btn-practica">🧘 Ejercicio de Atención Plena</button>
+
+            <button class="btn-action" id="btn-tecnica">✨ Técnica de Observación</button>
+
+            <button class="btn-completar" id="btn-completar">✔ Marcar capítulo como completado</button>
+
+            <p id="mensaje-estado" class="mensaje"></p>
+        </div>
+
+    </main>
+
+    <!-- CHATBOT -->
+    <div id="chatbot-button">
+        <img id="robot-avatar" src="/assets/robot/neutral.png" alt="robot" />
+    </div>
+
+    <div id="chatbot-panel">
+        <div class="chat-header">
+            <h3>Asistente de Bienestar</h3>
+            <button id="close-chat">×</button>
+        </div>
+
+        <div class="chat-body" id="chat-body"></div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta..." />
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        window.CAP_NUM = 2; // <--- SOLO ESTO CAMBIA POR CAPÍTULO
+    </script>
+
+    <script src="/firebase/firebase-app.js"></script>
+    <script src="/firebase/firebase-firestore.js"></script>
+
+    <script src="/main.js"></script>
+    <script src="/capitulos/js/capitulos.js"></script>
+    <script src="/chatbot/chatbot.js"></script>
+
+</body>
+</html>

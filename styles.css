@@ -276,3 +276,24 @@ body {
     font-weight: bold;
     color: #1565c0;
 }
+
+/* ================================
+   ROBOT GRANDE EN CAPITULOS
+================================ */
+.robot-practica-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#robot-practica {
+    width: 220px;
+    height: auto;
+    transition: 0.3s ease;
+}
+
+/* Para animaciones (si un día quieres agregar) */
+.robot-animado {
+    transform: scale(1.05);
+}
