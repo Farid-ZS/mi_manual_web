@@ -243,3 +243,36 @@ body {
     padding: 12px 15px;
     cursor: pointer;
 }
+
+/* Ajustes de botones para que se vean mejor */
+.btn-action, .btn-completar {
+    padding: 12px 20px;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #1e88e5;
+    color: white;
+    transition: 0.3s;
+}
+.btn-action:hover, .btn-completar:hover {
+    background: #1565c0;
+}
+
+/* Contenedor del robot grande */
+.robot-practica-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.robot-practica-container img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Mensaje estado */
+#mensaje-estado {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1565c0;
+}
