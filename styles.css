@@ -1,0 +1,240 @@
+/* ================================
+   GENERALES
+================================ */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 40px; /* ↓ leve reducción para ganar espacio */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    height: 65px; /* ↓ ANTES 80px → ahora 65px (se ve casi igual pero libera espacio) */
+}
+
+.navbar nav {
+    display: flex;
+    gap: 40px; /* más separación entre palabras */
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #1e88e5;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s;
+    white-space: nowrap; /* ← evita que se corte AYUDA */
+}
+
+.navbar nav a:hover {
+    color: #0d47a1;
+}
+
+/* ================================
+   HERO BANNER
+================================ */
+.hero {
+    margin-top: 90px;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 0 0 25px 25px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* <-- YA NO SE DEFORMA */
+    background: #e3f2fd;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 60px;
+    color: #0d47a1;
+}
+
+.hero-text h1 {
+    font-size: 46px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ================================
+   CAPÍTULOS
+================================ */
+.capitulos {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.cap-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;   /* ← limita ancho para centrado visual */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;  /* ← “5 espacios hacia adelante” */
+}
+
+
+.cap-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.cap-card img {
+    width: 70px;
+}
+
+.cap-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* ================================
+   IMPACTO
+================================ */
+.impacto {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.btn-impacto {
+    padding: 12px 25px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.btn-impacto:hover {
+    background: #1565c0;
+}
+
+/* ================================
+   CHATBOT WIDGET
+================================ */
+#chatbot-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+    z-index: 9999;
+    animation: float 3s ease-in-out infinite;
+}
+
+#chatbot-button img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* PANEL */
+#chatbot-panel {
+    position: fixed;
+    bottom: 120px;
+    right: 25px;
+    width: 340px;
+    height: 420px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    border: 2px solid #1e88e5;
+}
+
+.chat-header {
+    background: #1e88e5;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-body {
+    padding: 12px;
+    height: 300px;
+    overflow-y: auto;
+    background: #f5f7fa;
+}
+
+.bot-msg {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 80%;
+}
+
+.user-msg {
+    background: #bbdefb;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    align-self: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+}
+
+.chat-input button {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual de Bienestar Universitario</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <img src="/assets/logo.png" class="logo" alt="Logo">
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#capitulos">Capítulos</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#ayuda">Ayuda</a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+    </header>
+
+
+    <!-- HERO BANNER -->
+    <section class="hero" id="inicio">
+        <img src="/assets/banner.png" class="hero-img" alt="Banner principal">
+        <div class="hero-text">
+            <h1>Bienestar Universitario</h1>
+            <p>Un manual interactivo para manejar el estrés, mejorar tu enfoque y vivir mejor.</p>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN CAPÍTULOS -->
+    <section class="capitulos" id="capitulos">
+        <h2>Capítulos Principales</h2>
+
+        <div class="cap-grid">
+
+            <div class="cap-card">
+                <img src="/assets/icons/estres.png" />
+                <h3>1. Estrés Académico</h3>
+                <p>Identifica señales de estrés y aprende a manejarlo.</p>
+            </div>
+
+            <div class="cap-card">
+                <img src="/assets/icons/mindfulness.png" />
+                <h3>2. Mindfulness</h3>
+                <p>Técnicas para calmar la mente y mejorar tu enfoque.</p>
+            </div>
+
+            <div class="cap-card">
+                <img src="/assets/icons/pnl.png" />
+                <h3>3. PNL</h3>
+                <p>Reprograma tus pensamientos y emociones.</p>
+            </div>
+
+            <div class="cap-card">
+                <img src="/assets/icons/comunicacion.png" />
+                <h3>4. Comunicación Asertiva</h3>
+                <p>Mejora tus relaciones y tu forma de expresarte.</p>
+            </div>
+
+            <div class="cap-card">
+                <img src="/assets/icons/emociones.png" />
+                <h3>5. Gestión Emocional</h3>
+                <p>Desarrolla equilibrio emocional y autocontrol.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN IMPACTO -->
+    <section class="impacto" id="impacto">
+        <h2>Impacto en Estudiantes</h2>
+        <p>Pronto podrás ver métricas reales sobre cómo este manual ayuda a los estudiantes.</p>
+        <button class="btn-impacto">Ver Dashboard</button>
+    </section>
+
+
+    <!-- WIDGET DE CHAT (ROBOT) -->
+    <div id="chatbot-button">
+        <img id="robot-avatar" src="/assets/robot/neutral.png" alt="robot" />
+    </div>
+
+    <div id="chatbot-panel">
+        <div class="chat-header">
+            <h3>Asistente de Bienestar</h3>
+            <button id="close-chat">×</button>
+        </div>
+
+        <div class="chat-body" id="chat-body">
+            <p class="bot-msg">Hola 👋, soy tu asistente. Pregunta lo que necesites.</p>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta..." />
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
