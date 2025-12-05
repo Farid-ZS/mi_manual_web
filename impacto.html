@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto del Curso</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Librería Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* Contenedor para poner las gráficas una al lado de la otra */
+        .graficas-flex {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .grafica-box {
+            background: white;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            width: 330px;      /* 🔥 más pequeño */
+            height: auto;
+        }
+
+        canvas {
+            width: 100% !important; 
+            height: 220px !important; /* 🔥 más pequeño */
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <img src="/assets/logo.png" class="logo" alt="Logo">
+    <nav>
+        <a href="/index.html#inicio">Inicio</a>
+        <a href="/index.html#capitulos">Capítulos</a>
+        <a href="/impacto.html">Impacto</a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+</header>
+
+<section class="impacto">
+    <br><br>
+    <h1>Impacto en los Usuarios</h1>
+    <p>Visualiza cómo los participantes redujeron su nivel de estrés a lo largo del curso.</p>
+
+    <!-- 🔥 GRÁFICAS LADO A LADO -->
+    <div class="graficas-flex">
+
+        <!-- Gráfica 1 -->
+        <div class="grafica-box">
+            <h2 style="font-size:18px;">Promedio Antes vs Después</h2>
+            <canvas id="grafPromedio"></canvas>
+        </div>
+
+        <!-- Gráfica 2 -->
+        <div class="grafica-box">
+            <h2 style="font-size:18px;">Progreso Individual</h2>
+            <canvas id="grafUsuarios"></canvas>
+        </div>
+
+    </div>
+</section>
+
+<script>
+/* ======================================================
+   ⚠️ CONFIGURAR FIREBASE AQUÍ
+====================================================== */
+
+/* Datos de ejemplo (luego se reemplazan con Firebase) */
+const estresInicial = [80, 75, 60, 90, 70];
+const estresFinal   = [50, 40, 35, 55, 45];
+const usuarios = ["Ana", "Luis", "Pedro", "Carla", "Jorge"];
+
+/* ======================================================
+   GRÁFICA 1 - PROMEDIO
+====================================================== */
+const ctx1 = document.getElementById('grafPromedio').getContext('2d');
+
+new Chart(ctx1, {
+    type: 'bar',
+    data: {
+        labels: ["Antes del Curso", "Después del Curso"],
+        datasets: [{
+            label: "Estrés Promedio",
+            data: [
+                estresInicial.reduce((a,b)=>a+b)/estresInicial.length,
+                estresFinal.reduce((a,b)=>a+b)/estresFinal.length
+            ],
+            backgroundColor: ["#ef5350", "#66bb6a"]
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false } }
+    }
+});
+
+/* ======================================================
+   GRÁFICA 2 - PROGRESO POR USUARIO
+====================================================== */
+const ctx2 = document.getElementById('grafUsuarios').getContext('2d');
+
+new Chart(ctx2, {
+    type: 'line',
+    data: {
+        labels: usuarios,
+        datasets: [
+            {
+                label: "Estrés Inicial",
+                data: estresInicial,
+                borderColor: "#ef5350",
+                fill: false
+            },
+            {
+                label: "Estrés Final",
+                data: estresFinal,
+                borderColor: "#66bb6a",
+                fill: false
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        tension: 0.4
+    }
+});
+</script>
+
+</body>
+</html>

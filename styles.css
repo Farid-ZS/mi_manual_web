@@ -16,7 +16,7 @@ body {
     top: 0;
     width: 100%;
     background: #ffffff;
-    padding: 10px 40px; 
+    padding: 10px 40px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
@@ -110,9 +110,9 @@ body {
     border-radius: 16px;
     box-shadow: 0 0 12px rgba(0,0,0,0.1);
     transition: 0.3s;
-    text-decoration: none; /* evita subrayado en <a> */
-    color: inherit;        /* mantiene color del texto */
-    display: block;        /* todo el card clickeable */
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .cap-card img {
@@ -204,6 +204,7 @@ body {
     overflow-y: auto;
     background: #f5f7fa;
 }
+
 .bot-msg, .user-msg {
     white-space: pre-line;
 }
@@ -244,7 +245,7 @@ body {
     cursor: pointer;
 }
 
-/* Ajustes de botones para que se vean mejor */
+/* BOTONES */
 .btn-action, .btn-completar {
     padding: 12px 20px;
     margin: 8px;
@@ -256,15 +257,17 @@ body {
     color: white;
     transition: 0.3s;
 }
+
 .btn-action:hover, .btn-completar:hover {
     background: #1565c0;
 }
 
-/* Contenedor del robot grande */
+/* ROBOT GRANDE */
 .robot-practica-container {
     text-align: center;
     margin: 20px 0;
 }
+
 .robot-practica-container img {
     width: 120px;
     height: 120px;
@@ -278,7 +281,7 @@ body {
 }
 
 /* ================================
-   ROBOT GRANDE EN CAPITULOS
+   ROBOT EN CAPÍTULOS
 ================================ */
 .robot-practica-container {
     width: 100%;
@@ -293,7 +296,6 @@ body {
     transition: 0.3s ease;
 }
 
-/* Para animaciones (si un día quieres agregar) */
 .robot-animado {
     transform: scale(1.05);
 }
