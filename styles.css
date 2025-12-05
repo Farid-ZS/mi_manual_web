@@ -130,22 +130,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
     background: rgba(15, 23, 42, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 15px 50px;
-<<<<<<< Updated upstream
-=======
-=======
-    background: #ffffff;
-    padding: 10px 40px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
->>>>>>> 6fb1800559da3195539ac235d2699f03efedeff1
->>>>>>> Stashed changes
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -636,10 +624,6 @@ body {
 }
 
 .cap-card {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
     position: relative;
     background: rgba(30, 41, 59, 0.8);
     backdrop-filter: blur(10px);
@@ -650,19 +634,6 @@ body {
     color: var(--white);
     transition: all 0.4s ease;
     overflow: hidden;
-<<<<<<< Updated upstream
-=======
-=======
-    background: white;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    text-decoration: none;
-    color: inherit;
-    display: block;
->>>>>>> 6fb1800559da3195539ac235d2699f03efedeff1
->>>>>>> Stashed changes
 }
 
 .cap-card::before {
