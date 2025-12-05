@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capítulo 2 - Mindfulness</title>
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/capitulos/css/capitulos.css">
 </head>
@@ -13,49 +16,94 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <img src="/assets/logo.png" class="logo" alt="Logo">
-
+        <div class="logo-container">
+            <img src="/assets/logo.png" class="logo" alt="Logo">
+            <span class="logo-text">BienestarU</span>
+        </div>
         <nav>
             <a href="/index.html#inicio">Inicio</a>
             <a href="/index.html#capitulos">Capítulos</a>
-            <a href="/impacto.html">Impacto</a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="/index.html#impacto">Impacto</a>
         </nav>
     </header>
 
     <!-- CONTENIDO -->
     <main class="container">
 
-        <h1 class="chapter-title">Capítulo 2: Mindfulness</h1>
+        <!-- Navegación -->
+        <div class="chapter-nav">
+            <a href="/index.html#capitulos" class="back-btn">
+                ← Volver a capítulos
+            </a>
+            <span class="chapter-badge">📖 Capítulo 2 de 5</span>
+        </div>
 
-        <p class="intro">
-            El mindfulness te ayuda a mantener tu atención en el presente, a reducir el ruido mental
-            y a mejorar tu enfoque. En este capítulo aprenderás técnicas sencillas que podrás usar
-            en cualquier momento del día.
-        </p>
+        <!-- Header del capítulo -->
+        <div class="chapter-header">
+            <div class="chapter-icon">🧘</div>
+            <h1 class="chapter-title">Mindfulness</h1>
+            <p class="intro">
+                El mindfulness te ayuda a mantener tu atención en el presente, a reducir el ruido mental
+                y a mejorar tu enfoque. Aprende <strong>técnicas sencillas</strong> que podrás usar en cualquier momento del día.
+            </p>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="chapter-progress">
+            <div class="progress-info">
+                <span>Tu progreso</span>
+                <span>0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+        </div>
 
         <hr>
 
         <!-- SECCIÓN 1 -->
         <section class="chapter-section">
-            <h2>1. ¿Qué es el mindfulness?</h2>
+            <h2><span class="section-icon">🌟</span> 1. ¿Qué es el mindfulness?</h2>
+            <p>Es una práctica de atención plena que te permite conectar con el momento presente:</p>
             <ul class="chapter-list">
-                <li>Estar consciente del momento presente</li>
-                <li>Observar sin juzgar</li>
-                <li>Reconectar con tus sentidos</li>
-                <li>Reducir pensamientos automáticos</li>
+                <li>Estar consciente del momento presente sin juzgar</li>
+                <li>Observar tus pensamientos como nubes que pasan</li>
+                <li>Reconectar con tus sentidos y tu cuerpo</li>
+                <li>Reducir pensamientos automáticos y ansiedad</li>
             </ul>
+            
+            <div class="tip-card">
+                <span class="tip-icon">🎯</span>
+                <div class="tip-content">
+                    <h4>Dato importante</h4>
+                    <p>Solo 10 minutos diarios de mindfulness pueden reducir significativamente los niveles de cortisol (hormona del estrés).</p>
+                </div>
+            </div>
         </section>
 
         <!-- SECCIÓN 2 -->
         <section class="chapter-section">
-            <h2>2. Beneficios principales</h2>
+            <h2><span class="section-icon">✨</span> 2. Beneficios principales</h2>
+            <p>La práctica regular de mindfulness te ayudará a:</p>
+            <ul class="chapter-list checklist">
+                <li>Mejorar tu concentración en clases y estudios</li>
+                <li>Reducir la ansiedad antes de exámenes</li>
+                <li>Obtener mayor claridad mental para tomar decisiones</li>
+                <li>Desarrollar mejor regulación emocional</li>
+                <li>Mejorar la calidad de tu sueño</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section class="chapter-section">
+            <h2><span class="section-icon">🛠️</span> 3. Técnica básica de respiración</h2>
+            <p>Sigue estos pasos para una práctica rápida de 3 minutos:</p>
             <ul class="chapter-list">
-                <li>Mejor concentración</li>
-                <li>Menos ansiedad</li>
-                <li>Mayor claridad mental</li>
-                <li>Mejor regulación emocional</li>
+                <li>Siéntate cómodamente con la espalda recta</li>
+                <li>Cierra los ojos y respira profundamente</li>
+                <li>Inhala contando hasta 4, mantén 4, exhala 4</li>
+                <li>Enfoca tu atención solo en la respiración</li>
+                <li>Si tu mente divaga, gentilmente vuelve a la respiración</li>
             </ul>
         </section>
 
@@ -71,12 +119,22 @@
             <h3>¿Qué deseas hacer?</h3>
 
             <button class="btn-action" id="btn-practica">🧘 Ejercicio de Atención Plena</button>
-
             <button class="btn-action" id="btn-tecnica">✨ Técnica de Observación</button>
-
-            <button class="btn-completar" id="btn-completar">✔ Marcar capítulo como completado</button>
+            <button class="btn-completar" id="btn-completar">✅ Marcar capítulo como completado</button>
 
             <p id="mensaje-estado" class="mensaje"></p>
+        </div>
+
+        <!-- Navegación entre capítulos -->
+        <div class="chapter-navigation">
+            <a href="/capitulos/cap1.html" class="nav-chapter prev">
+                <span class="nav-label">← Anterior</span>
+                <span class="nav-title">Estrés Académico</span>
+            </a>
+            <a href="/capitulos/cap3.html" class="nav-chapter next">
+                <span class="nav-label">Siguiente →</span>
+                <span class="nav-title">PNL</span>
+            </a>
         </div>
 
     </main>

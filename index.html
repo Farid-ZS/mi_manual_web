@@ -5,78 +5,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manual de Bienestar Universitario</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- PARTÍCULAS DECORATIVAS -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+    </div>
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <img src="/assets/logo.png" class="logo" alt="Logo">
+        <div class="logo-container">
+            <img src="/assets/logo.png" class="logo" alt="Logo">
+            <span class="logo-text">BienestarU</span>
+        </div>
 
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#capitulos">Capítulos</a>
-            <a href="#impacto">Impacto</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="#inicio" class="nav-link">
+                <span class="nav-icon">🏠</span>
+                Inicio
+            </a>
+            <a href="#capitulos" class="nav-link">
+                <span class="nav-icon">📚</span>
+                Capítulos
+            </a>
+            <a href="#stats" class="nav-link">
+                <span class="nav-icon">📊</span>
+                Estadísticas
+            </a>
+            <a href="#impacto" class="nav-link">
+                <span class="nav-icon">💡</span>
+                Impacto
+            </a>
         </nav>
+
+        <button class="cta-nav-btn">
+            <span>¡Empezar!</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </button>
     </header>
 
     <!-- HERO BANNER -->
     <section class="hero" id="inicio">
-        <img src="/assets/banner.png" class="hero-img" alt="Banner principal">
-        <div class="hero-text">
-            <h1>Bienestar Universitario</h1>
-            <p>Un manual interactivo para manejar el estrés, mejorar tu enfoque y vivir mejor.</p>
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🎓</span>
+                <span>Para Estudiantes Universitarios</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Domina tu</span>
+                <span class="title-highlight">Bienestar</span>
+                <span class="title-line">Universitario</span>
+            </h1>
+            <p class="hero-subtitle">Un manual interactivo para manejar el estrés, mejorar tu enfoque y vivir mejor. 
+                <span class="highlight-text">Diseñado especialmente para ti.</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#capitulos" class="btn-primary">
+                    <span>Explorar Capítulos</span>
+                    <div class="btn-shine"></div>
+                </a>
+                <a href="#stats" class="btn-secondary">
+                    <span class="play-icon">▶</span>
+                    Ver Estadísticas
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Estudiantes Ayudados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Capítulos Interactivos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="95">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Satisfacción</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-container">
+                <img src="/assets/banner.png" class="hero-img" alt="Banner principal">
+                <div class="image-glow"></div>
+            </div>
+            <div class="floating-card card-1">
+                <span class="card-emoji">🧘</span>
+                <span class="card-text">Mindfulness</span>
+            </div>
+            <div class="floating-card card-2">
+                <span class="card-emoji">💪</span>
+                <span class="card-text">Resilencia</span>
+            </div>
+            <div class="floating-card card-3">
+                <span class="card-emoji">🎯</span>
+                <span class="card-text">Enfoque</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE BENEFICIOS -->
+    <section class="benefits-banner">
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <span class="benefit-icon">⚡</span>
+                <span class="benefit-text">Técnicas Probadas</span>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">🎯</span>
+                <span class="benefit-text">Ejercicios Prácticos</span>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">🤖</span>
+                <span class="benefit-text">Asistente Virtual 24/7</span>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">📱</span>
+                <span class="benefit-text">100% Interactivo</span>
+            </div>
         </div>
     </section>
 
     <!-- SECCIÓN CAPÍTULOS -->
     <section class="capitulos" id="capitulos">
-        <h2>Capítulos Principales</h2>
+        <div class="section-header">
+            <span class="section-badge">📖 Contenido</span>
+            <h2 class="section-title">Capítulos <span class="gradient-text">Principales</span></h2>
+            <p class="section-description">Explora cada módulo diseñado para transformar tu experiencia universitaria</p>
+        </div>
 
         <div class="cap-grid">
-
-            <a href="/capitulos/cap1.html" class="cap-card">
-                <img src="/assets/icons/estres.png" alt="Estrés Académico"/>
-                <h3>1. Estrés Académico</h3>
-                <p>Identifica señales de estrés y aprende a manejarlo.</p>
+            <a href="/capitulos/cap1.html" class="cap-card" data-aos="fade-up">
+                <div class="card-glow"></div>
+                <div class="card-number">01</div>
+                <div class="card-icon-wrapper">
+                    <img src="/assets/icons/estres.png" alt="Estrés Académico"/>
+                    <div class="icon-ring"></div>
+                </div>
+                <h3>Estrés Académico</h3>
+                <p>Identifica señales de estrés y aprende a manejarlo de forma efectiva.</p>
+                <div class="card-footer">
+                    <span class="card-tag">⏱️ 15 min</span>
+                    <span class="card-arrow">→</span>
+                </div>
             </a>
 
-            <a href="/capitulos/cap2.html" class="cap-card">
-                <img src="/assets/icons/mindfulness.png" alt="Mindfulness"/>
-                <h3>2. Mindfulness</h3>
-                <p>Técnicas para calmar la mente y mejorar tu enfoque.</p>
+            <a href="/capitulos/cap2.html" class="cap-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-number">02</div>
+                <div class="card-icon-wrapper">
+                    <img src="/assets/icons/mindfulness.png" alt="Mindfulness"/>
+                    <div class="icon-ring"></div>
+                </div>
+                <h3>Mindfulness</h3>
+                <p>Técnicas para calmar la mente y mejorar tu enfoque diario.</p>
+                <div class="card-footer">
+                    <span class="card-tag">⏱️ 20 min</span>
+                    <span class="card-arrow">→</span>
+                </div>
             </a>
 
-            <a href="/capitulos/cap3.html" class="cap-card">
-                <img src="/assets/icons/pnl.png" alt="PNL"/>
-                <h3>3. PNL</h3>
-                <p>Reprograma tus pensamientos y emociones.</p>
+            <a href="/capitulos/cap3.html" class="cap-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-number">03</div>
+                <div class="card-icon-wrapper">
+                    <img src="/assets/icons/pnl.png" alt="PNL"/>
+                    <div class="icon-ring"></div>
+                </div>
+                <h3>PNL</h3>
+                <p>Reprograma tus pensamientos y emociones para el éxito.</p>
+                <div class="card-footer">
+                    <span class="card-tag">⏱️ 18 min</span>
+                    <span class="card-arrow">→</span>
+                </div>
             </a>
 
-            <a href="/capitulos/cap4.html" class="cap-card">
-                <img src="/assets/icons/comunicacion.png" alt="Comunicación Asertiva"/>
-                <h3>4. Comunicación Asertiva</h3>
+            <a href="/capitulos/cap4.html" class="cap-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-glow"></div>
+                <div class="card-number">04</div>
+                <div class="card-icon-wrapper">
+                    <img src="/assets/icons/comunicacion.png" alt="Comunicación Asertiva"/>
+                    <div class="icon-ring"></div>
+                </div>
+                <h3>Comunicación Asertiva</h3>
                 <p>Mejora tus relaciones y tu forma de expresarte.</p>
+                <div class="card-footer">
+                    <span class="card-tag">⏱️ 15 min</span>
+                    <span class="card-arrow">→</span>
+                </div>
             </a>
 
-            <a href="/capitulos/cap5.html" class="cap-card">
-                <img src="/assets/icons/emociones.png" alt="Gestión Emocional"/>
-                <h3>5. Gestión Emocional</h3>
+            <a href="/capitulos/cap5.html" class="cap-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-glow"></div>
+                <div class="card-number">05</div>
+                <div class="card-icon-wrapper">
+                    <img src="/assets/icons/emociones.png" alt="Gestión Emocional"/>
+                    <div class="icon-ring"></div>
+                </div>
+                <h3>Gestión Emocional</h3>
                 <p>Desarrolla equilibrio emocional y autocontrol.</p>
+                <div class="card-footer">
+                    <span class="card-tag">⏱️ 22 min</span>
+                    <span class="card-arrow">→</span>
+                </div>
             </a>
+        </div>
+    </section>
 
+    <!-- SECCIÓN ESTADÍSTICAS -->
+    <section class="stats-section" id="stats">
+        <div class="stats-bg"></div>
+        <div class="section-header light">
+            <span class="section-badge">📊 Datos</span>
+            <h2 class="section-title">¿Por qué es <span class="gradient-text">importante</span>?</h2>
+            <p class="section-description">El estrés universitario es un problema real. Estos números lo demuestran.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">😰</div>
+                <div class="stat-big-number" data-target="70">0</div>
+                <div class="stat-unit">%</div>
+                <div class="stat-desc">de estudiantes experimentan estrés significativo</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📉</div>
+                <div class="stat-big-number" data-target="45">0</div>
+                <div class="stat-unit">%</div>
+                <div class="stat-desc">reportan que afecta su rendimiento académico</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✨</div>
+                <div class="stat-big-number" data-target="89">0</div>
+                <div class="stat-unit">%</div>
+                <div class="stat-desc">mejoran con técnicas de mindfulness</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-big-number" data-target="3">0</div>
+                <div class="stat-unit">x</div>
+                <div class="stat-desc">más productivos después de aplicar estas técnicas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Listo para transformar tu experiencia universitaria?</h2>
+            <p>Comienza hoy mismo con nuestro manual interactivo y descubre técnicas que cambiarán tu vida.</p>
+            <a href="#capitulos" class="cta-button">
+                <span>Comenzar Ahora</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="cta-decoration">
+            <div class="cta-circle"></div>
+            <div class="cta-circle"></div>
+            <div class="cta-circle"></div>
         </div>
     </section>
 
     <!-- SECCIÓN IMPACTO -->
     <section class="impacto" id="impacto">
-        <h2>Impacto en Estudiantes</h2>
-        <p>Pronto podrás ver métricas reales sobre cómo este manual ayuda a los estudiantes.</p>
-        <button class="btn-impacto">Ver Dashboard</button>
+        <div class="section-header">
+            <span class="section-badge">💡 Resultados</span>
+            <h2 class="section-title">Impacto en <span class="gradient-text">Estudiantes</span></h2>
+            <p class="section-description">Descubre cómo este manual está ayudando a estudiantes como tú.</p>
+        </div>
+        <div class="impacto-content">
+            <div class="impacto-visual">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">Este manual cambió mi forma de manejar los exámenes. ¡Ya no me siento tan abrumado!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🎓</div>
+                        <div class="author-info">
+                            <span class="author-name">Estudiante Anónimo</span>
+                            <span class="author-role">Ingeniería, 3er año</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="impacto-action">
+                <p class="impacto-desc">Explora métricas reales sobre cómo este manual ayuda a los estudiantes universitarios.</p>
+                <a href="/dashboard/charts.html" class="btn-impacto">
+                    <span>Ver Dashboard Completo</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">🧠 BienestarU</span>
+                <p>Transformando la experiencia universitaria, un estudiante a la vez.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#capitulos">Capítulos</a>
+                <a href="#stats">Estadísticas</a>
+                <a href="#impacto">Impacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Manual de Bienestar Universitario. Hecho con 💜 para estudiantes.</p>
+        </div>
+    </footer>
 
     <!-- WIDGET DE CHAT (ROBOT) -->
     <div id="chatbot-button">
@@ -99,5 +356,6 @@
     </div>
 
     <script src="/chatbot/chatbot.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

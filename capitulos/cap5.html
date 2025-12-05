@@ -1,109 +1,120 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capítulo 5 - Gestión Emocional</title>
-
+    <title>Capitulo 5 - Gestion Emocional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/capitulos/css/capitulos.css">
 </head>
-
 <body>
-
-    <!-- NAV -->
     <header class="navbar">
-        <img src="/assets/logo.png" class="logo" alt="Logo">
-
+        <div class="logo-container">
+            <img src="/assets/logo.png" class="logo" alt="Logo">
+            <span class="logo-text">BienestarU</span>
+        </div>
         <nav>
             <a href="/index.html#inicio">Inicio</a>
-            <a href="/index.html#capitulos">Capítulos</a>
-            <a href="/impacto.html">Impacto</a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="/index.html#capitulos">Capitulos</a>
+            <a href="/index.html#impacto">Impacto</a>
         </nav>
     </header>
-
-    <!-- CONTENIDO -->
     <main class="container">
-        <h1 class="chapter-title">Capítulo 5: Gestión Emocional</h1>
-
-        <p class="intro">
-            La gestión emocional consiste en identificar, comprender y regular tus emociones para responder con claridad y equilibrio.
-            Aquí aprenderás dos herramientas esenciales: el alfabeto emocional y la dieta emocional saludable.
-        </p>
-
+        <div class="chapter-nav">
+            <a href="/index.html#capitulos" class="back-btn"> Volver a capitulos</a>
+            <span class="chapter-badge"> Capitulo 5 de 5</span>
+        </div>
+        <div class="chapter-header">
+            <div class="chapter-icon"></div>
+            <h1 class="chapter-title">Gestion Emocional</h1>
+            <p class="intro">La gestion emocional consiste en identificar, comprender y regular tus emociones para responder con <strong>claridad y equilibrio</strong>. Aprende herramientas esenciales para tu bienestar.</p>
+        </div>
+        <div class="chapter-progress">
+            <div class="progress-info"><span>Tu progreso</span><span>0%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+        </div>
         <hr>
-
-        <!-- SECCIÓN 1 -->
         <section class="chapter-section">
-            <h2>1. El alfabeto emocional</h2>
+            <h2><span class="section-icon"></span> 1. El alfabeto emocional</h2>
+            <p>Ampliar tu vocabulario emocional te da mas control:</p>
             <ul class="chapter-list">
-                <li>Nombrar con precisión lo que sientes.</li>
-                <li>Diferenciar matices entre emociones similares.</li>
-                <li>Comprender qué mensaje trae cada emoción.</li>
+                <li>Nombrar con precision lo que sientes (no solo "mal" o "bien")</li>
+                <li>Diferenciar matices entre emociones similares</li>
+                <li>Comprender que mensaje trae cada emocion</li>
+                <li>Validar tus emociones sin juzgarlas</li>
+            </ul>
+            <div class="tip-card">
+                <span class="tip-icon"></span>
+                <div class="tip-content">
+                    <h4>Dato importante</h4>
+                    <p>Investigaciones muestran que nombrar una emocion reduce su intensidad. Esto se llama "etiquetado afectivo".</p>
+                </div>
+            </div>
+        </section>
+        <section class="chapter-section">
+            <h2><span class="section-icon"></span> 2. Dieta emocional saludable</h2>
+            <p>Asi como cuidas lo que comes, cuida lo que "consumes" emocionalmente:</p>
+            <ul class="chapter-list checklist">
+                <li>Reducir estimulos que drenan energia (noticias negativas, personas toxicas)</li>
+                <li>Incorporar actividades que nutren tu estabilidad</li>
+                <li>Construir habitos emocionales positivos diarios</li>
+                <li>Limitar tiempo en redes sociales si te afectan</li>
             </ul>
         </section>
-
-        <!-- SECCIÓN 2 -->
         <section class="chapter-section">
-            <h2>2. Dieta emocional saludable</h2>
+            <h2><span class="section-icon"></span> 3. Regulacion emocional</h2>
+            <p>Tecnicas para cuando las emociones son intensas:</p>
             <ul class="chapter-list">
-                <li>Reducir estímulos que drenan energía.</li>
-                <li>Incorporar actividades que nutren tu estabilidad.</li>
-                <li>Construir hábitos emocionales positivos.</li>
+                <li>Pausa antes de reaccionar: cuenta hasta 10</li>
+                <li>Respiracion profunda para calmar el sistema nervioso</li>
+                <li>Preguntate: ¿Que necesito realmente ahora?</li>
+                <li>Expresa la emocion de forma constructiva</li>
             </ul>
         </section>
-
         <hr>
-
-        <!-- ROBOT -->
         <div class="robot-practica-container">
             <img id="robot-practica" src="/assets/robot/pensando.png" alt="Robot emocional">
         </div>
-
-        <!-- BOTONES -->
         <div class="actions">
-            <h3>¿Qué deseas hacer?</h3>
-
-            <button class="btn-action" id="btn-practica">💛 Practicar Alfabeto Emocional</button>
-
-            <button class="btn-action" id="btn-tecnica">🥗 Técnica de Dieta Emocional</button>
-
-            <button class="btn-completar" id="btn-completar">✔ Marcar capítulo como completado</button>
-
+            <h3>¿Que deseas hacer?</h3>
+            <button class="btn-action" id="btn-practica"> Practicar Alfabeto Emocional</button>
+            <button class="btn-action" id="btn-tecnica"> Tecnica de Dieta Emocional</button>
+            <button class="btn-completar" id="btn-completar"> Marcar capitulo como completado</button>
             <p id="mensaje-estado" class="mensaje"></p>
         </div>
+        <div class="chapter-navigation">
+            <a href="/capitulos/cap4.html" class="nav-chapter prev">
+                <span class="nav-label"> Anterior</span>
+                <span class="nav-title">Comunicacion Asertiva</span>
+            </a>
+            <a href="/index.html#capitulos" class="nav-chapter next">
+                <span class="nav-label">Finalizar </span>
+                <span class="nav-title">Ver todos los capitulos</span>
+            </a>
+        </div>
     </main>
-
-    <!-- CHATBOT -->
     <div id="chatbot-button">
         <img id="robot-avatar" src="/assets/robot/neutral.png" alt="robot" />
     </div>
-
     <div id="chatbot-panel">
         <div class="chat-header">
             <h3>Asistente de Bienestar</h3>
-            <button id="close-chat">×</button>
+            <button id="close-chat"></button>
         </div>
-
         <div class="chat-body" id="chat-body"></div>
-
         <div class="chat-input">
             <input type="text" id="user-input" placeholder="Escribe tu pregunta..." />
             <button id="send-btn">Enviar</button>
         </div>
     </div>
-
-    <!-- SCRIPTS -->
-    <script> window.CAP_NUM = 5; </script>
-
+    <script>window.CAP_NUM = 5;</script>
     <script src="/firebase/firebase-app.js"></script>
     <script src="/firebase/firebase-firestore.js"></script>
-
     <script src="/main.js"></script>
     <script src="/capitulos/js/capitulos.js"></script>
     <script src="/chatbot/chatbot.js"></script>
-
 </body>
 </html>
