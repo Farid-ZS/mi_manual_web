@@ -1250,7 +1250,11 @@ body {
     filter: brightness(1.1);
 }
 
-/* Ajustes de botones para que se vean mejor */
+.chat-input button:hover {
+    filter: brightness(1.1);
+}
+
+/* BOTONES */
 .btn-action, .btn-completar {
     padding: 14px 24px;
     margin: 8px;
@@ -1270,11 +1274,17 @@ body {
     box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
-/* Contenedor del robot grande */
+.btn-action:hover, .btn-completar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* ROBOT GRANDE */
 .robot-practica-container {
     text-align: center;
     margin: 20px 0;
 }
+
 .robot-practica-container img {
     width: 120px;
     height: 120px;
@@ -1288,7 +1298,7 @@ body {
 }
 
 /* ================================
-   ROBOT GRANDE EN CAPITULOS
+   ROBOT EN CAPÍTULOS
 ================================ */
 .robot-practica-container {
     width: 100%;
@@ -1303,7 +1313,6 @@ body {
     transition: 0.3s ease;
 }
 
-/* Para animaciones (si un día quieres agregar) */
 .robot-animado {
     transform: scale(1.05);
 }
